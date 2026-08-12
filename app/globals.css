@@ -1,134 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  color-scheme: light;
-  --paper: #f7f7f4;
-  --ink: #171714;
-  --muted: #65645d;
-  --rule: #d8d7d0;
-}
-
 * {
   box-sizing: border-box;
-}
-
-html {
-  background: var(--paper);
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  background: var(--paper);
-  color: var(--ink);
+  background: #ffffff;
+  color: #111111;
   font-family: Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
 }
 
 main {
-  width: min(100%, 1080px);
+  width: min(100%, 780px);
   margin: 0 auto;
-  padding: 0 clamp(22px, 6vw, 80px) clamp(72px, 12vw, 150px);
+  padding: 64px 24px 120px;
 }
 
 header {
-  min-height: 88px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--ink);
+  margin-bottom: 96px;
 }
 
 header p {
   margin: 0;
-  font-size: 15px;
+  font-size: clamp(32px, 6vw, 48px);
   font-weight: 600;
-  letter-spacing: -0.015em;
-}
-
-article {
-  width: min(100%, 760px);
-  padding-top: clamp(68px, 11vw, 132px);
+  line-height: 1.1;
 }
 
 section {
-  padding: clamp(46px, 8vw, 84px) 0;
-  border-bottom: 1px solid var(--rule);
-}
-
-section:first-child {
-  padding-top: 0;
+  margin-bottom: 80px;
 }
 
 section:last-child {
-  border-bottom: 0;
-}
-
-h1,
-h2,
-p {
-  max-width: 680px;
+  margin-bottom: 0;
 }
 
 h1 {
-  margin: 24px 0 0;
-  font-size: clamp(48px, 8vw, 88px);
-  font-weight: 500;
-  line-height: 0.98;
-  letter-spacing: -0.065em;
+  margin: 20px 0 0;
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 400;
+  line-height: 1.3;
 }
 
 h2 {
-  margin: 0 0 22px;
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
+  margin: 0 0 20px;
+  font-size: clamp(28px, 5vw, 38px);
+  font-weight: 600;
+  line-height: 1.15;
 }
 
 p {
   margin: 0;
-  font-size: clamp(18px, 2.2vw, 22px);
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: -0.022em;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 p + p {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .details {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .details p {
-  padding: 28px 0;
-  border-top: 1px solid var(--rule);
-}
-
-.details p:last-child {
-  padding-bottom: 0;
+  margin-top: 24px;
 }
 
 strong {
   font-weight: 600;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 520px) {
+  main {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
   header {
-    min-height: 72px;
+    margin-bottom: 72px;
   }
 
-  article {
-    padding-top: 70px;
-  }
-
-  h1 {
-    font-size: clamp(48px, 14vw, 68px);
-  }
-
-  .details {
-    margin-top: 36px;
+  section {
+    margin-bottom: 64px;
   }
 }
