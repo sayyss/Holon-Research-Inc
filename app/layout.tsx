@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 
-const title = "QUAD//CORE — 4× GPU Compute Chassis";
+const title = "QUAD//CORE — Four GPUs. One Box.";
 const description =
-  "A pure HTML and CSS cutaway showcase of a purpose-built four-GPU compute chassis.";
+  "A minimal HTML and CSS four-GPU compute chassis designed for 10 concurrent users.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -27,9 +27,9 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: imageUrl,
-          width: 1729,
-          height: 910,
-          alt: "QUAD//CORE four-GPU compute chassis cutaway",
+          width: 1536,
+          height: 1024,
+          alt: "Minimal black-and-white four-GPU chassis for 10 concurrent users",
         },
       ],
     },
