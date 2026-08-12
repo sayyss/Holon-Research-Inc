@@ -1,10 +1,10 @@
 const gpus = ["01", "02", "03", "04"];
 
 const specs = [
-  ["4×", "GPUs"],
-  ["128 GB", "VRAM"],
-  ["GEN 5", "PCIe"],
-  ["3200 W", "Power"],
+  ["4×", "R9700"],
+  ["128 GB", "GDDR6"],
+  ["RDNA 4", "Architecture"],
+  ["1200 W", "GPU TBP"],
 ];
 
 export default function Home() {
@@ -19,11 +19,11 @@ export default function Home() {
 
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="kicker">4× GPU compute system</p>
-          <h1 id="hero-title">Four GPUs.<br />One box.</h1>
+          <p className="kicker">4× AMD Radeon AI PRO R9700</p>
+          <h1 id="hero-title">Four R9700s.<br />One box.</h1>
           <p className="intro-copy">
-            Parallel compute, reduced to the essentials. Four full-width
-            accelerators in one precise, serviceable chassis.
+            128 GB of combined GPU memory for local inference, development,
+            and ten simultaneous users—inside one precise workstation.
           </p>
         </div>
 
@@ -33,36 +33,36 @@ export default function Home() {
             aria-label="Computer chassis containing four graphics processors"
           >
             <div className="chassis-head">
-              <span>QC–04 / Compute chassis</span>
+              <span>QC–04 / Radeon AI workstation</span>
               <span className="status">Running</span>
             </div>
 
             <div className="gpu-stack" aria-label="Four installed GPUs">
               {gpus.map((gpu) => (
                 <article className="gpu" key={gpu} aria-label={`GPU ${gpu}`}>
+                  <div className="io-bracket" aria-hidden="true">
+                    <i /><i /><i /><i />
+                  </div>
                   <div className="gpu-label">
-                    <strong>GPU {gpu}</strong>
-                    <span>Accelerator</span>
+                    <span>AMD Radeon</span>
+                    <strong>AI PRO R9700</strong>
+                    <small>GPU {gpu} · 32 GB GDDR6</small>
                   </div>
-                  <div className="fans" aria-hidden="true">
+                  <div className="shroud" aria-hidden="true">
+                    <span /><span /><span />
+                  </div>
+                  <div className="cooler" aria-hidden="true">
                     <span className="fan" />
-                    <span className="fan" />
+                    <span className="vent" />
                   </div>
-                  <div className="bus" aria-hidden="true">
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <span className="link">×16</span>
+                  <span className="link">PCIe 5.0<br />×16</span>
                 </article>
               ))}
             </div>
 
             <div className="chassis-foot">
-              <span>Positive pressure cooling</span>
-              <span>3200 W</span>
+              <span>Four double-slot active cards</span>
+              <span>4 × 300 W TBP</span>
             </div>
           </section>
 
