@@ -126,11 +126,14 @@ strong {
   text-align: center;
 }
 
-.stripe-button-wrap {
-  display: flex;
-  justify-content: center;
+.purchase-link {
   margin-top: 24px;
-  min-height: 48px;
+  text-align: center;
+}
+
+.purchase-link a {
+  color: inherit;
+  text-underline-offset: 3px;
 }
 
 .research-page {
