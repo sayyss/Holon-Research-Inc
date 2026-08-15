@@ -131,22 +131,25 @@ strong {
   text-align: center;
 }
 
-.purchase-link a {
-  color: inherit;
-  text-underline-offset: 3px;
-}
-
+.purchase-link a,
 .quote-trigger,
 .quote-submit {
   display: block;
   width: 100%;
-  margin-top: 24px;
   padding: 12px 16px;
   border: 1px solid #111111;
   background: #ffffff;
   color: #111111;
   font: inherit;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
+}
+
+.quote-trigger {
+  margin-top: 24px;
 }
 
 .quote-dialog {
