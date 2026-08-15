@@ -100,9 +100,57 @@
                 <span>10 concurrent users</span>
                 <span>4 x AMD Radeon AI PRO R9700(32gbx4)</span>
               </p>
+              <button class="quote-trigger" type="button" data-open-quote>
+                Get a quote
+              </button>
             </div>
           </div>
         </section>
+
+        <dialog class="quote-dialog" id="quote-dialog" aria-label="Get a quote">
+          <form
+            class="quote-form"
+            action="https://formspree.io/f/xojnverd"
+            method="POST"
+          >
+            <button
+              class="quote-close"
+              type="button"
+              aria-label="Close"
+              data-close-quote
+            >
+              &times;
+            </button>
+
+            <label for="quote-name">Name</label>
+            <input
+              id="quote-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+
+            <label for="quote-email">Email</label>
+            <input
+              id="quote-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+
+            <label for="quote-usecase">Usecase description</label>
+            <textarea
+              id="quote-usecase"
+              name="usecase"
+              rows="6"
+              required
+            ></textarea>
+
+            <button class="quote-submit" type="submit">Get a quote</button>
+          </form>
+        </dialog>
 
         <section class="closing">
           <p>ok sounds good.... but why should I own my AI?</p>
@@ -115,5 +163,24 @@
         </section>
       </article>
     </main>
+
+    <script>
+      const quoteDialog = document.querySelector("#quote-dialog");
+      const quoteOpen = document.querySelector("[data-open-quote]");
+      const quoteClose = document.querySelector("[data-close-quote]");
+
+      quoteOpen.addEventListener("click", () => {
+        quoteDialog.showModal();
+        document.querySelector("#quote-name").focus();
+      });
+
+      quoteClose.addEventListener("click", () => quoteDialog.close());
+
+      quoteDialog.addEventListener("click", (event) => {
+        if (event.target === quoteDialog) {
+          quoteDialog.close();
+        }
+      });
+    </script>
   </body>
 </html>
