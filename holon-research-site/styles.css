@@ -126,6 +126,13 @@ strong {
   text-align: center;
 }
 
+.stripe-button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  min-height: 48px;
+}
+
 .research-page {
   position: relative;
   display: grid;
