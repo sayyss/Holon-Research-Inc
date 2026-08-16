@@ -38,10 +38,6 @@ section:last-child {
   margin-bottom: 0;
 }
 
-.closing {
-  margin-top: 120px;
-}
-
 h1 {
   margin: 20px 0 0;
   font-size: clamp(24px, 4vw, 32px);
