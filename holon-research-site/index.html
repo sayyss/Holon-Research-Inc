@@ -3,176 +3,274 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Holon Research, Inc</title>
+    <title>Holon</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
-      <div>
-        <h1 class="hero-title">
-          Holon <a class="research-secret-link" href="research/">Research</a>, Inc
-        </h1>
-        <p class="hero-subtitle">Infrastructure for Private Intelligence</p>
+      <div class="hero-inner">
+        <h1 class="hero-title">Holon</h1>
+        <p class="hero-subtitle">Local AI stack</p>
+        <div class="hero-tree" aria-label="Private intelligence infrastructure">
+          <span class="hero-tree-connectors" aria-hidden="true">
+            <span class="hero-tree-curve hero-tree-curve-1"></span>
+            <span class="hero-tree-curve hero-tree-curve-2"></span>
+            <span class="hero-tree-curve hero-tree-curve-3"></span>
+            <span class="hero-tree-curve hero-tree-curve-4"></span>
+          </span>
+          <ul class="hero-tree-branches">
+            <li>Prebuilt hardware</li>
+            <li>Model runtime</li>
+            <li>Harness</li>
+            <li>Improvement loop</li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
+      <section class="model-runtime-section">
+        <div class="model-runtime-copy">
+          <h2>Model runtime</h2>
+          <p>
+            Zero setup inference<br />
+            Pre-tuned models and config<br />
+            Stable 24/7 runtime<br />
+            Never touch a chat template
+          </p>
+          <button
+            class="supported-models-trigger"
+            type="button"
+            data-open-models
+          >
+            Supported models
+          </button>
+        </div>
+        <div class="model-runtime-visual">
+          <img
+            src="model_runtime.png"
+            alt="Holon model runtime and hardware status interface"
+          />
+        </div>
+      </section>
+
+      <dialog
+        class="quote-dialog models-dialog"
+        id="models-dialog"
+        aria-labelledby="models-dialog-title"
+      >
+        <div class="models-dialog-content">
+          <button
+            class="quote-close"
+            type="button"
+            aria-label="Close"
+            data-close-models
+          >
+            &times;
+          </button>
+          <h2 id="models-dialog-title">Supported models</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Model</th>
+                <th scope="col">Context</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GPT-OSS 20B</td>
+                <td>128K</td>
+              </tr>
+              <tr>
+                <td>Qwen3.6 35B-A3B</td>
+                <td>256K</td>
+              </tr>
+              <tr>
+                <td>Qwen3.6 35B-A3B Optimized</td>
+                <td>256K</td>
+              </tr>
+              <tr>
+                <td>Qwen3.6 27B Base</td>
+                <td>256k</td>
+              </tr>
+              <tr>
+                <td>Gemma 4 26B-A4B</td>
+                <td>256K</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="models-dialog-note">Anything from huggingface that fits</p>
+        </div>
+      </dialog>
+
+      <section class="harness-section">
+        <div class="harness-visual">
+          <img src="harness.png" alt="Holon agent harness interface" />
+        </div>
+        <div class="harness-copy">
+          <h2>Harness</h2>
+          <p>
+            Browser based<br />
+            Built on Pi(Or Bring your own)<br />
+            Aggressive caching<br />
+            Per session sandbox<br />
+            ..Close the lid, it's okay
+          </p>
+        </div>
+      </section>
+
+      <section class="knowledge-packs-section">
+        <h2>Knowledge packs</h2>
+        <p class="knowledge-packs-description">skip prefill with ease.</p>
+        <div
+          class="knowledge-flow"
+          role="img"
+          aria-label="Books, code rules, skills, and company docs flow through a pre-computed KV cache and plug into any session"
+        >
+          <ul class="knowledge-sources">
+            <li>Books</li>
+            <li>Code rules</li>
+            <li>Skills</li>
+            <li>Company docs</li>
+          </ul>
+          <span class="knowledge-collector" aria-hidden="true"></span>
+          <p class="knowledge-stage">Pre-computed KV cache</p>
+          <span class="knowledge-arrow" aria-hidden="true"></span>
+          <p class="knowledge-stage">Plug into any session</p>
+        </div>
+      </section>
+
+      <section class="improvement-loop-section">
+        <h2>What's the improvement loop?</h2>
+        <p>
+          Holon will allow you to directly fine-tune your daily driver model on
+          your agent sessions, improving directly from experience on your tasks.
+          Still in Beta.
+        </p>
+      </section>
+
       <article>
         <section>
-          <h2>What do we do?</h2>
-          <p>We're putting an AI lab on your desk</p>
-        </section>
-
-        <section>
-          <h2>How?</h2>
-          <p>We sell Holon, a computer that runs a local AI stack:</p>
-
-          <div class="details">
-            <p>
-              <strong>Model runtime:</strong> Holon provides a stable runtime to
-              run 24/7 agentic sessions locally. We tune and optimize every model
-              that goes into the device. See supported models.
-            </p>
-
-            <p>
-              <strong>Harness:</strong> Built on Pi(our favourite coding agent),
-              we make local agents actually useful through intelligent routing,
-              aggressive caching, and a sandboxed environment to run entirely
-              on-device
-            </p>
-
-            <p>
-              <strong>Improvement loop:</strong> We provide a cloud finetuning
-              loop using self-distillation and your unique feedback to improve
-              local models on your tasks. Gets better as you use it!
-            </p>
-          </div>
-        </section>
-
-        <section>
           <h2>do I need to setup anything other than an account?</h2>
-          <p>
-            No, everything is already setup for you. Holon is designed for out
-            of the box experience.
-          </p>
+          <p>No. Holon works out of the box.</p>
         </section>
 
         <section>
           <h2>What hardware is it running?</h2>
           <p>
-            Holon runs on AMD’s Strix Halo 395+ AI boards with 64gb of VRAM,
-            running x86, which means you can host multiple locally made apps
-            without deploying anywhere alongside your agents.
+            Holon runs on AMD's Strix Halo 395+ AI board with 64GB of unified
+            memory.<br />
+            Enterprise version includes 2xAMD Radeon AI PRO R9700, scaled to
+            your usage.
           </p>
         </section>
 
         <section>
           <h2>What else is included?</h2>
           <p>
-            Unlimited deep research / web search(it’s self-hosted).<br />
-            Memory<br />
-            tailscale setup to access your Holon from anywhere.
+            Unlimited deep research / web search(it's self-hosted).<br />
+            Support for other coding agents like Pi, Codex, Opencode
           </p>
         </section>
 
         <section>
-          <h2>How much is it?</h2>
-
           <div class="pricing-grid">
             <div class="pricing-option">
               <div class="pricing-image">
-                <img src="assets/consumer_case.jpeg" alt="Consumer Holon case" />
+                <div
+                  class="consumer-side-case"
+                  role="img"
+                  aria-label="Side view of the consumer Holon case"
+                >
+                  <span class="side-case-handle" aria-hidden="true"></span>
+                  <span class="side-case-board" aria-hidden="true">
+                    <span class="side-case-left-heatsink"></span>
+                    <span class="side-case-fan"></span>
+                    <span class="side-case-ram"></span>
+                    <span class="side-case-battery"></span>
+                    <span class="side-case-slots"></span>
+                    <span class="side-case-drive-heatsink"></span>
+                    <span class="side-case-chip-heatsink"></span>
+                  </span>
+                  <span class="side-case-rail side-case-rail-top" aria-hidden="true"></span>
+                  <span class="side-case-rail side-case-rail-bottom" aria-hidden="true"></span>
+                  <span class="side-case-post side-case-post-left" aria-hidden="true"></span>
+                  <span class="side-case-post side-case-post-right" aria-hidden="true"></span>
+                  <span class="side-case-foot side-case-foot-left" aria-hidden="true"></span>
+                  <span class="side-case-foot side-case-foot-right" aria-hidden="true"></span>
+                </div>
+                <p class="pricing-price">$2300</p>
               </div>
-              <p class="pricing-details">
-                <span>$2300</span>
-                <span>Single Use</span>
-                <span>AMD Strix Halo 395+ AI 64GB</span>
-                <span>1TB NVME</span>
-              </p>
-              <p class="purchase-link">
-                <a href="https://buy.stripe.com/aFaaEY5rTaY159Oeg33Je01">secure your spot</a>
-              </p>
+              <div class="pricing-copy">
+                <p class="pricing-details">
+                  <span>Single Use</span>
+                  <span>AMD Strix Halo 395+ AI 64GB</span>
+                  <span>1TB NVME</span>
+                </p>
+                <p class="purchase-link">
+                  <a href="https://buy.stripe.com/aFaaEY5rTaY159Oeg33Je01">secure your spot</a>
+                </p>
+              </div>
             </div>
 
             <div class="pricing-option">
               <div class="pricing-image">
-                <img src="assets/enterprise_Case.jpeg" alt="Enterprise Holon case" />
+                <div
+                  class="enterprise-side-case"
+                  role="img"
+                  aria-label="Side view of the enterprise Holon case with two Radeon GPUs"
+                >
+                  <span class="enterprise-case-shell" aria-hidden="true">
+                    <span class="enterprise-case-top-shroud"></span>
+                    <span class="enterprise-case-tray"></span>
+                    <span class="enterprise-motherboard">
+                      <span class="enterprise-cpu-socket"></span>
+                      <span class="enterprise-ram-slots"></span>
+                      <span class="enterprise-board-heatsink"></span>
+                      <span class="enterprise-board-ports"></span>
+                    </span>
+                    <span class="enterprise-case-front-mesh"></span>
+                    <span class="enterprise-gpu-stack">
+                      <span class="enterprise-gpu">
+                        <span class="enterprise-gpu-label">AMD<br />RADEON</span>
+                      </span>
+                      <span class="enterprise-gpu">
+                        <span class="enterprise-gpu-label">AMD<br />RADEON</span>
+                      </span>
+                    </span>
+                  </span>
               </div>
-              <p class="pricing-details">
-                <span>Start. $7999</span>
-                <span>upto 10 concurrent users</span>
-                <span>upto 4xAMD Radeon AI PRO R9700</span>
-              </p>
-              <button class="quote-trigger" type="button" data-open-quote>
-                Get a quote
-              </button>
+                <p class="pricing-price">Start. $7999</p>
+              </div>
+              <div class="pricing-copy">
+                <p class="pricing-details">
+                  <span>upto 10 concurrent users</span>
+                  <span>upto 4xAMD Radeon AI PRO R9700</span>
+                </p>
+                <p class="purchase-link">
+                  <a href="https://calendly.com/sayyss-holon-research/30min">
+                    Book a build slot
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
-
-        <dialog class="quote-dialog" id="quote-dialog" aria-label="Get a quote">
-          <form
-            class="quote-form"
-            action="https://formspree.io/f/xojnverd"
-            method="POST"
-          >
-            <button
-              class="quote-close"
-              type="button"
-              aria-label="Close"
-              data-close-quote
-            >
-              &times;
-            </button>
-
-            <label for="quote-name">Name</label>
-            <input
-              id="quote-name"
-              name="name"
-              type="text"
-              autocomplete="name"
-              required
-            />
-
-            <label for="quote-email">Email</label>
-            <input
-              id="quote-email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              required
-            />
-
-            <label for="quote-usecase">Usecase description</label>
-            <textarea
-              id="quote-usecase"
-              name="usecase"
-              rows="6"
-              required
-            ></textarea>
-
-            <button class="quote-submit" type="submit">Get a quote</button>
-          </form>
-        </dialog>
 
       </article>
     </main>
 
     <script>
-      const quoteDialog = document.querySelector("#quote-dialog");
-      const quoteOpen = document.querySelector("[data-open-quote]");
-      const quoteClose = document.querySelector("[data-close-quote]");
+      const modelsDialog = document.querySelector("#models-dialog");
+      const modelsOpen = document.querySelector("[data-open-models]");
+      const modelsClose = document.querySelector("[data-close-models]");
 
-      quoteOpen.addEventListener("click", () => {
-        quoteDialog.showModal();
-        document.querySelector("#quote-name").focus();
-      });
+      modelsOpen.addEventListener("click", () => modelsDialog.showModal());
+      modelsClose.addEventListener("click", () => modelsDialog.close());
 
-      quoteClose.addEventListener("click", () => quoteDialog.close());
-
-      quoteDialog.addEventListener("click", (event) => {
-        if (event.target === quoteDialog) {
-          quoteDialog.close();
+      modelsDialog.addEventListener("click", (event) => {
+        if (event.target === modelsDialog) {
+          modelsDialog.close();
         }
       });
     </script>
