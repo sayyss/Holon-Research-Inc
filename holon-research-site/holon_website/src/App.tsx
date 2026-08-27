@@ -199,7 +199,7 @@ export function App() {
 
           <dialog
             ref={betaDialogRef}
-            aria-label="Bay area beta program"
+            aria-labelledby="holon-beta-title"
             onClick={(event) => {
               if (event.target === event.currentTarget) {
                 betaDialogRef.current?.close();
@@ -214,6 +214,13 @@ export function App() {
                 className="absolute right-5 top-4 text-xl leading-none text-neutral-400 hover:text-neutral-900">
                 ×
               </button>
+
+              <div className="mb-6 border-b border-neutral-200 pb-4 pr-8">
+                <h2 id="holon-beta-title" className="text-xl font-medium tracking-tight text-neutral-900">
+                  Holon Beta program
+                </h2>
+                <p className="mt-1 text-sm text-neutral-500">3/10 filled.</p>
+              </div>
 
               {betaFormStatus === 'success' ? (
                 <p className="pr-6 text-base leading-relaxed text-neutral-600" role="status">
