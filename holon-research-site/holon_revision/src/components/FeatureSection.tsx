@@ -34,7 +34,7 @@ export function FeatureSection({ feature }: FeatureSectionProps) {
         </div>
 
         <figure className="md:col-span-8">
-          <div className="overflow-hidden rounded-[14px] border border-hairline bg-surface p-1.5 shadow-[0_1px_2px_rgba(14,15,17,0.04),0_18px_50px_-30px_rgba(14,15,17,0.22)]">
+          <div className={`overflow-hidden rounded-[14px] border border-hairline bg-surface p-1.5 shadow-[0_1px_2px_rgba(14,15,17,0.04),0_18px_50px_-30px_rgba(14,15,17,0.22)] ${id === 'on-device-sandboxes' ? 'mx-auto w-1/2' : ''}`}>
             {media.kind === 'video' ?
             <video
               src={media.src}
