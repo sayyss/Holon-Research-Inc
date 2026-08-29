@@ -62,7 +62,7 @@ A shared build for small teams, with our custom stack to support concurrent agen
 
 Anything from Huggingface that fits. We regularly test and optimize newly released models for Holon’s specific build. We preload Gemma 4 26B, Qwen 3.6 35B, Qwen 3.8 27B and GPT-OSS 20B out of the box.
 
-Enterprise version runs Deepseek V4 Flash, Qwen 3.8 Flash Next, qwen 3.5 122b a10b
+Enterprise version runs Deepseek V4 Flash, Qwen 3.8 Flash Next, Qwen 3.5 122b a10b
 
 ### Do I need to set anything up beyond plugging it in and joining wifi?
 
