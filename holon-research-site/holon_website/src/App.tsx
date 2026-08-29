@@ -122,7 +122,23 @@ export function App() {
           </figure>
         </section>
 
-        {/* Section 4: Knowledge Packs */}
+        {/* Section 4: On-device Sandboxes */}
+        <section className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-lg font-medium text-neutral-900 md:text-xl">On-device sandboxes</h2>
+            <p className="text-base leading-relaxed text-neutral-500 md:text-lg">
+              Every session gets its own secure sandbox on-device
+            </p>
+          </div>
+          <figure className="w-full">
+            <img
+              src="/sandboxes.png"
+              alt="On-device sandboxes"
+              className="h-auto w-full rounded-xl border border-neutral-100 bg-neutral-50 shadow-sm" />
+          </figure>
+        </section>
+
+        {/* Section 5: Knowledge Packs */}
         <section className="flex flex-col gap-12">
           <div className="flex flex-col gap-3">
             <h2 className="text-lg md:text-xl font-medium text-neutral-900">Knowledge packs</h2>
@@ -144,7 +160,7 @@ export function App() {
           </figure>
         </section>
 
-        {/* Section 5: Hardware */}
+        {/* Section 6: Hardware */}
         <section className="flex flex-col gap-5">
           <div className="w-full border border-neutral-200 rounded-2xl overflow-hidden bg-neutral-50/50">
             <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-neutral-200">
@@ -281,7 +297,7 @@ export function App() {
           </dialog>
         </section>
 
-        {/* Section 6: FAQ */}
+        {/* Section 7: FAQ */}
         <section className="flex flex-col gap-12 pt-12 border-t border-neutral-100">
           <h2 className="text-lg md:text-xl font-medium text-neutral-900">FAQ</h2>
           <div className="flex flex-col gap-8">
