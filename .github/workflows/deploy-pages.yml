@@ -36,20 +36,20 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: holon-research-site/holon_website/package-lock.json
+          cache-dependency-path: holon-research-site/holon_revision/package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        working-directory: holon-research-site/holon_website
+        working-directory: holon-research-site/holon_revision
 
       - name: Build redesigned site
         run: npm run build
-        working-directory: holon-research-site/holon_website
+        working-directory: holon-research-site/holon_revision
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: holon-research-site/holon_website/dist
+          path: holon-research-site/holon_revision/dist
 
       - name: Deploy
         id: deployment

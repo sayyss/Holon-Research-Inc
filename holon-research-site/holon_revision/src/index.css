@@ -1,0 +1,35 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400;450;500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --canvas: #FFFFFF;
+  --surface: #FCFCFD;
+  --ink: #0E0F11;
+  --ink-soft: #4A4E55;
+  --ink-muted: #8B9099;
+  --hairline: rgba(14, 15, 17, 0.10);
+  --hairline-soft: rgba(14, 15, 17, 0.06);
+}
+html {
+  background-color: var(--canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+body {
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+}
+.font-display {
+  font-family: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  font-optical-sizing: auto;
+}
+.numeric {
+  font-variant-numeric: tabular-nums;
+}
