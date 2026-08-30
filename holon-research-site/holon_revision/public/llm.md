@@ -25,7 +25,7 @@ A local-first harness designed to work with our model runtime.
 
 ## On-device sandboxes
 
-Every session gets its own secure sandbox on-device
+Every session runs in its own sandbox, created in under a second.
 
 ## Knowledge packs
 

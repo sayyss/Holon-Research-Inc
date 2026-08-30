@@ -38,7 +38,7 @@ export const features: Feature[] = [
 {
   id: 'on-device-sandboxes',
   title: 'On-device sandboxes',
-  lede: 'Every session gets its own secure sandbox on-device',
+  lede: 'Every session runs in its own sandbox, created in under a second.',
   media: {
     kind: 'image',
     src: '/sandboxes.png',
