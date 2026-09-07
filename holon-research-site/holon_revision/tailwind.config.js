@@ -16,6 +16,13 @@ export default {content: [
           DEFAULT: 'var(--hairline)',
           soft: 'var(--hairline-soft)',
         },
+        onyx: {
+          DEFAULT: 'var(--onyx)',
+          soft: 'var(--onyx-soft)',
+          line: 'var(--onyx-line)',
+          text: 'var(--onyx-text)',
+          'text-soft': 'var(--onyx-text-soft)',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],

@@ -10,12 +10,17 @@
 
 :root {
   --canvas: #FFFFFF;
-  --surface: #FCFCFD;
-  --ink: #0E0F11;
-  --ink-soft: #4A4E55;
-  --ink-muted: #8B9099;
-  --hairline: rgba(14, 15, 17, 0.10);
-  --hairline-soft: rgba(14, 15, 17, 0.06);
+  --surface: #FBFBFC;
+  --ink: #08090A;
+  --ink-soft: #45494F;
+  --ink-muted: #94989F;
+  --hairline: rgba(8, 9, 10, 0.10);
+  --hairline-soft: rgba(8, 9, 10, 0.055);
+  --onyx: #0A0B0C;
+  --onyx-soft: #15171A;
+  --onyx-line: rgba(255, 255, 255, 0.10);
+  --onyx-text: #EDEEF0;
+  --onyx-text-soft: #9BA1A9;
 }
 html {
   background-color: var(--canvas);
