@@ -35,7 +35,7 @@ export const features: Feature[] = [
   mediaWidth: 'max-w-xl',
   media: {
     kind: 'image',
-    src: "/image.png",
+    src: "/sandbox_2.png",
     alt: 'A list of running on-device sandboxes showing CPU and memory usage per session'
   }
 },
