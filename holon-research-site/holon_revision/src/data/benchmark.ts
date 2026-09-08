@@ -24,12 +24,26 @@ export const benchmarkGroups: BenchmarkGroup[] = [
   { context: '32K', holon: '26.82 s', strix: '35.54 s', spark: '86.06 s' },
   { context: '128K', holon: '126.35 s', strix: '272.38 s', spark: '167.83 s' }]
 
-},
-{
-  label: 'Prefill throughput',
-  rows: [
-  { context: '8K', holon: '1,103 t/s', strix: '1,096 t/s', spark: '372 t/s' },
-  { context: '32K', holon: '1,228 t/s', strix: '910 t/s', spark: '383 t/s' },
-  { context: '128K', holon: '1,014 t/s', strix: '468 t/s', spark: '764 t/s' }]
-
 }];
+
+export type HolonSuperBenchmarkRow = {
+  concurrentUsers: string;
+  totalPrefillSpeed: string;
+  generationSpeedPerUser: string;
+  timeToFirstToken: string;
+};
+
+export const holonSuperBenchmarkRows: HolonSuperBenchmarkRow[] = [
+  {
+    concurrentUsers: '8 users',
+    totalPrefillSpeed: '~5,500 tokens/sec',
+    generationSpeedPerUser: '67.9 tokens/sec',
+    timeToFirstToken: '0.19 seconds'
+  },
+  {
+    concurrentUsers: '16 users',
+    totalPrefillSpeed: '~6,000 tokens/sec',
+    generationSpeedPerUser: '51.0 tokens/sec',
+    timeToFirstToken: '0.25 seconds'
+  }
+];

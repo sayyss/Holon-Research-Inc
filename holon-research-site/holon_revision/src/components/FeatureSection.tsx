@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Reveal } from './Reveal';
+import { SandboxGrid } from './SandboxGrid';
 import { SupportedModelsDialog } from './SupportedModelsDialog';
 import type { Feature } from '../data/features';
 
@@ -49,6 +50,8 @@ export function FeatureSection({ feature }: FeatureSectionProps) {
         </div>
 
         <Reveal className="md:col-span-8">
+          {media.kind === 'sandboxes' ?
+          <SandboxGrid /> :
           <figure className={mediaWidth ?? ''}>
             <div className="overflow-hidden rounded-[18px] bg-[#EFEFF1] p-2.5 shadow-[0_1px_2px_rgba(8,9,10,0.04),0_40px_80px_-56px_rgba(8,9,10,0.35)]">
               {media.kind === 'video' ?
@@ -69,6 +72,7 @@ export function FeatureSection({ feature }: FeatureSectionProps) {
               }
             </div>
           </figure>
+          }
         </Reveal>
       </div>
 

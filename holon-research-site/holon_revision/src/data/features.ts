@@ -1,8 +1,12 @@
-export type FeatureMedia = {
-  kind: 'video' | 'image';
-  src: string;
-  alt?: string;
-};
+export type FeatureMedia =
+  | {
+      kind: 'video' | 'image';
+      src: string;
+      alt?: string;
+    }
+  | {
+      kind: 'sandboxes';
+    };
 
 export type Feature = {
   id: string;
@@ -32,11 +36,8 @@ export const features: Feature[] = [
   id: 'sandboxes',
   title: 'On-device sandboxes',
   lede: 'Long-running agents work in isolated sandboxes on your machine.',
-  mediaWidth: 'max-w-xl',
   media: {
-    kind: 'image',
-    src: "/sandbox_2.png",
-    alt: 'A list of running on-device sandboxes showing CPU and memory usage per session'
+    kind: 'sandboxes'
   }
 },
 {
