@@ -13,7 +13,7 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-col justify-end gap-6 md:col-span-5">
             <a
-              href="https://calendly.com/sayyss-holon-research/30min"
+              href="https://calendly.com/sayyss-holon-research/holon-super-build"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex w-fit items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-onyx transition-transform duration-150 ease-premium hover:-translate-y-[1px]">

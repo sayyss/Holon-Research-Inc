@@ -48,6 +48,6 @@ export const machines: Machine[] = [
 
   runs: ['DeepSeek V4 Flash', 'Qwen 3.8 Flash Next', 'GPT-OSS 120B'],
   note: '*Can be configured to fit usage',
-  cta: { label: 'Book a build slot', href: 'https://calendly.com/sayyss-holon-research/30min' },
+  cta: { label: 'Book a build slot', href: 'https://calendly.com/sayyss-holon-research/holon-super-build' },
   featured: true
 }];

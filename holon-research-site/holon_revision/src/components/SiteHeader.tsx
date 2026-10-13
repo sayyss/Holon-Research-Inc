@@ -24,7 +24,7 @@ export function SiteHeader() {
             FAQ
           </a>
           <a
-            href="https://calendly.com/sayyss-holon-research/30min"
+            href="https://calendly.com/sayyss-holon-research/holon-super-build"
             target="_blank"
             rel="noopener noreferrer"
             className="whitespace-nowrap border-b border-ink/30 pb-0.5 text-sm text-ink transition-colors duration-200 ease-premium hover:border-ink">
