@@ -42,11 +42,11 @@ export const machines: Machine[] = [
   capacity: '8–10 concurrent users, burst usage up to 16.',
   specs: [
   { label: 'Accelerators', value: '4 × Radeon AI PRO R9700 32GB GDDR6' },
-  { label: 'Processor', value: 'Threadripper 7960X' },
-  { label: 'Memory', value: '128GB DDR5' },
+  { label: 'Processor', value: 'Threadripper 9970X' },
+  { label: 'Memory', value: '128GB DDR5 ECC' },
   { label: 'Storage', value: '8TB M.2' }],
 
-  runs: ['DeepSeek V4 Flash', 'Qwen 3.8 Flash Next', 'GPT-OSS 120B'],
+  runs: ['DeepSeek V4 Flash', 'Qwen 3.8 Flash Next', 'GLM 5.3 Flash'],
   note: '*Can be configured to fit usage',
   cta: { label: 'Book a build slot', href: 'https://calendly.com/sayyss-holon-research/holon-super-build' },
   featured: true
