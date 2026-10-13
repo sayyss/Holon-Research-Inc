@@ -1,0 +1,44 @@
+Holon Research, Inc
+    Infrastructure for Sovereign intelligence
+
+Inference is defining companies
+Agents are:
+Running companies
+Changing individual/company behavior
+but…
+Inference runs on metered bill
+Capabilities are decided by providers
+Inference is not electricity, as said by emerging consensus. Every token is not the same.
+API bills are reaching $5k/month for individual developers
+Heavy enterprise users are reaching upwards of $2k/month for every employee
+
+
+Case for dependency, and privacy 
+Collected data -> improve provider models -> more dependent
+Privacy focused individuals/companies -> hesitant 
+
+   AI too important to let handful of companies remain at helm…
+
+Alternative? 
+Open-source models ≈ closed models: great!
+Majority of inference: cheaper/faster models: great!
+Cloud hosting & GPUs under $10k: great!
+    But hold on…
+Where do I run it? If its cloud what's the difference?
+What inference engine do I use?
+How do I maintain it?
+How do I run stable concurrency?
+How do I make sure it’s cheaper? 
+How do I make sure it actually works?
+
+Where is that pointing us?
+A Computer that
+Contains fast enough GPUs
+Stable 24/7 inference 
+Can handle multiple users
+Regular computer, not a data center in your office/home
+
+On the software side…
+maximize local compute 
+Intelligent routing 
+Smart concurrency

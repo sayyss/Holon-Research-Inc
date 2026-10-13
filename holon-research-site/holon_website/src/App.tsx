@@ -83,7 +83,7 @@ export function App() {
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm md:text-base text-neutral-400">
               <span>pre-loaded tuned models</span>
               <span>per-user session caching</span>
-              <span>load multiple models</span>
+              <span>load multiple models simultaneously</span>
             </div>
           </div>
           <figure className="w-full">
@@ -175,7 +175,8 @@ export function App() {
                     <li>1TB M.2 Drive</li>
                   </ul>
                 </div>
-                <div>
+                <div className="flex flex-col items-start gap-3">
+                  <p className="text-sm text-neutral-500">$2300</p>
                   <a
                     href="https://buy.stripe.com/aFaaEY5rTaY159Oeg33Je01"
                     target="_blank"
@@ -305,6 +306,7 @@ export function App() {
               <h3 className="text-base font-medium text-neutral-900">What models can I run?</h3>
               <p className="text-base leading-relaxed text-neutral-600">
                 Anything from Huggingface that fits. We regularly test and optimize newly released models for Holon’s specific build. We preload Gemma 4 26B, Qwen 3.6 35B, Qwen 3.8 27B, and GPT-OSS 20B out of the box.
+                <span className="mt-2 block">Enterprise version runs Deepseek V4 Flash, Qwen 3.8 Flash Next, qwen 3.5 122b a10b</span>
               </p>
             </div>
 

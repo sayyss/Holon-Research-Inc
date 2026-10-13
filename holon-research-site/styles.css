@@ -50,6 +50,35 @@ p {
   margin-top: 32px;
 }
 
+.how-it-works {
+  margin-top: 64px;
+}
+
+.how-it-works p {
+  color: #292929;
+  font-size: 15px;
+}
+
+.how-it-works img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 22px;
+}
+
+.how-it-works-step {
+  margin-top: 56px;
+}
+
+.how-it-works video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 22px;
+  background: #f7f7f7;
+  pointer-events: none;
+}
+
 .manifesto-group {
   margin-top: 72px;
 }

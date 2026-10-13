@@ -1,3 +1,6 @@
+import consumerCase from "../consumer_case.jpeg";
+import enterpriseCase from "../enterprise_Case.jpeg";
+
 export default function Home() {
   return (
     <main>
@@ -10,7 +13,7 @@ export default function Home() {
       <article>
         <section>
           <h2>What do we do?</h2>
-          <p>We sell AI you own instead of rent.</p>
+          <p>We build a local intelligence stack</p>
         </section>
 
         <section>
@@ -43,7 +46,7 @@ export default function Home() {
         <section>
           <h2>do I need to setup anything other than an account?</h2>
           <p>
-            No, everything is already setup for you, Holon is designed for out
+            No, everything is already setup for you. Holon is designed for out
             of the box experience.
           </p>
         </section>
@@ -60,20 +63,41 @@ export default function Home() {
         <section>
           <h2>What else is included?</h2>
           <p>
-            Self-hosted web search / deep-research for unlimited queries,
-            self-hosted memory(we use Honcho), and a tailscale setup to access
-            your Holon from anywhere.
+            Unlimited deep research / web search(it&apos;s self-hosted).
+            <br />
+            Memory
+            <br />
+            tailscale setup to access your Holon from anywhere.
           </p>
         </section>
 
         <section>
           <h2>How much is it?</h2>
-          <p>For consumers, it&apos;s $2300.</p>
-          <p>
-            For enterprise, Starting at $10k. We build a custom rig that can
-            serve 10 concurrent users running agentic sessions. Buy as many as
-            you need.
-          </p>
+
+          <div className="pricing-grid">
+            <div className="pricing-option">
+              <div className="pricing-image">
+                <img src={consumerCase.src} alt="Consumer Holon case" />
+              </div>
+              <p className="pricing-details">
+                <span>$2300</span>
+                <span>Single Use</span>
+                <span>AMD Strix Halo 395+ AI 64GB</span>
+                <span>1TB NVME</span>
+              </p>
+            </div>
+
+            <div className="pricing-option">
+              <div className="pricing-image">
+                <img src={enterpriseCase.src} alt="Enterprise Holon case" />
+              </div>
+              <p className="pricing-details">
+                <span>Start. $10k.</span>
+                <span>10 concurrent users</span>
+                <span>4 x AMD Radeon AI PRO R9700(32gbx4)</span>
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="closing">

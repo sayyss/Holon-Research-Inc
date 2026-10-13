@@ -85,6 +85,48 @@ strong {
   text-decoration: none;
 }
 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.pricing-option {
+  padding: 16px 16px 20px;
+  border: 1px solid #d8d8d8;
+}
+
+.pricing-image {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.pricing-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pricing-details {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.pricing-details span {
+  display: block;
+}
+
+.pricing-details span:first-child {
+  margin-bottom: 12px;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
 .research-page {
   position: relative;
   display: grid;
@@ -216,5 +258,12 @@ strong {
 
   .research-copy {
     padding: 32px 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
   }
 }
